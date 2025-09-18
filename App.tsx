@@ -12,8 +12,9 @@ import {
   TextInput,
   View,
 } from 'react-native';
+import NativeMultiplier from './specs/NativeMultiplierModule';
 
-const multiplier = (n1: number, n2: number) => n1 * n2;
+const multiplier = NativeMultiplier.multiply;
 
 function App() {
   const [num1, setNum1] = useState<number>(0);
